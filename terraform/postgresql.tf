@@ -1,11 +1,3 @@
-# This resource creates a null resource that runs a local-exec provisioner
-# to create a directory specified by the postgres_root_password variable.
-resource "null_resource" "example" {
-  provisioner "local-exec" {
-    command = "mkdir -p ${var.postgres_root_password}"
-  }
-}
-
 # This resource pulls the PostgreSQL Docker image with the specified version.
 resource "docker_image" "postgres" {
   name = "postgres:17"
