@@ -1,8 +1,10 @@
+# --== General ==-- #
 variable "timezone" {
   description = "The timezone to use for the server"
   type        = string
 }
 
+# --== Docker ==-- #
 variable "docker_host" {
   description = "The Docker host to connect to"
   type        = string
@@ -13,6 +15,8 @@ variable "docker_network" {
   description = "The Docker network to connect to"
   type        = string
 }
+
+# --== PostgreSQL ==-- #
 
 variable "postgres_root_user" {
   description = "The PostgreSQL username"
