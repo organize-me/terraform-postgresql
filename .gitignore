@@ -1,0 +1,8 @@
+# terraform
+**/.terraform
+*.tfstate
+*.tfstate.*
+*.lock.hcl
+
+# IntelliJ IDEA
+.idea
